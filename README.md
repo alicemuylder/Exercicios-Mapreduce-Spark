@@ -43,9 +43,13 @@ Versões otimizadas com PySpark, para análise de grandes volumes de dados e com
 
 ### RESULTADOS 
 O arquivo pipeline.py permite que abra um menu para que seja possível escolher qual exercício deseja ver a resoução. E após isso, cada exercício salva sua saída na pasta results/, podendo conter:
+
 -->Arquivos .txt ou .csv
+
 -->Relatórios agregados
+
 -->Visualizações (quando aplicável)
+
 -->Dentro de cada exercício tem uma aba respostas.iypnb que mostra as conclusões tiradas após a realização dos códigos.
 
 ### TECNOLOGIAS UTILIZADAS 
