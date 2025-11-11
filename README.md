@@ -46,7 +46,7 @@ Cada exercício salva sua saída na pasta results/, podendo conter:
 Arquivos .txt ou .csv
 Relatórios agregados
 Visualizações (quando aplicável)
-Dentro de cada exercício tem uma aba respostas que mostra as conclusões tiradas após a realização dos códigos.
+-->Dentro de cada exercício tem uma aba respostas.iypnb que mostra as conclusões tiradas após a realização dos códigos.
 
 ### TECNOLOGIAS UTILIZADAS 
 Python 3.11
