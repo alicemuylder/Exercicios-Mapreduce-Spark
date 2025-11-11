@@ -1,0 +1,3 @@
+negativo: 2 (20.0%)
+neutro: 3 (30.0%)
+positivo: 5 (50.0%)

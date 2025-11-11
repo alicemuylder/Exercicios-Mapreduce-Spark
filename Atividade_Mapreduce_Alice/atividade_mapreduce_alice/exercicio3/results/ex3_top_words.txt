@@ -1,0 +1,21 @@
+
+Sentimento positivo:
+produto: 1
+excelente: 1
+qualidade: 1
+maravilhosa: 1
+super: 1
+
+Sentimento negativo:
+decepcionante: 1
+muitos: 1
+defeitos: 1
+e: 1
+problemas: 1
+
+Sentimento neutro:
+produto: 2
+nem: 2
+péssimo: 1
+qualidade: 1
+horrível: 1

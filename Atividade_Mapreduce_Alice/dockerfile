@@ -1,0 +1,45 @@
+
+FROM python:3.9-slim
+
+# Metadata
+LABEL maintainer="IBMEC"
+LABEL description="Pipeline Batch + Streaming com Apache Spark"
+LABEL version="1.0"
+
+# Instalar Java (necessário para Spark)
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends openjdk-21-jre-headless && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Configurar JAVA_HOME para a nova versão
+###################################################
+# ATENÇÃO
+# Configuração windows
+# ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+# Configuração Mac
+# ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk-arm64
+###################################################
+ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+ENV PATH="${JAVA_HOME}/bin:${PATH}"
+
+# Criar diretório de trabalho
+WORKDIR /app
+
+# Copiar requirements
+COPY requirements.txt .
+
+# Instalar dependências Python
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copiar código fonte
+COPY atividade_mapreduce_alice/ .
+COPY pipeline.py .
+
+# Criar diretórios que servirão como pontos de montagem para volumes.
+# Estes diretórios serão preenchidos pelos volumes definidos no docker-compose.
+RUN mkdir -p dados resultados
+
+# Definir comando padrão
+
+CMD ["python", "pipeline.py"]

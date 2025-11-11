@@ -1,0 +1,26 @@
+TOP 5 URLs MAIS ACESSADAS
+/index.html: 5
+/about.html: 1
+/api/data: 1
+/contact.html: 1
+/api/users: 1
+
+DISTRIBUIÇÃO DE CÓDIGOS HTTP
+200: 7
+201: 1
+404: 1
+500: 1
+
+TOP 5 IPs COM MAIS REQUISIÇÕES
+192.168.1.100: 4
+192.168.1.101: 2
+192.168.1.102: 1
+192.168.1.103: 1
+192.168.1.104: 1
+
+DISTRIBUIÇÃO DE ACESSOS POR HORA
+08:00: 3
+09:00: 2
+10:00: 2
+14:00: 2
+15:00: 1
